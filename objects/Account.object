@@ -377,6 +377,12 @@
         <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
     </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Employees_not_left_empty</fullName>
+        <active>true</active>
+        <errorConditionFormula>ISBLANK( NumberOfEmployees )</errorConditionFormula>
+        <errorMessage>You must include a number in this field</errorMessage>
+    </validationRules>
     <webLinks>
         <fullName>AltavistaNews</fullName>
         <availability>online</availability>
